@@ -19,4 +19,43 @@ body {
     color: $color-dark;  
 }
 
-@import 'buttons';
+.grid {
+    display: grid;
+}
+
+header.grid {
+    min-height: $size-width+vh;
+    background-size: cover;
+    background-image: url("../img/header.jpg");
+    position: relative;
+    background-position: $position;
+    align-content: $position;
+
+    &::before {
+        content: "";
+        background-color: $color-grey;        
+        top: $size-zero;
+        left: $size-zero;
+        bottom: $size-zero;
+        right: $size-zero;
+        opacity: 0.65;
+        position: absolute;
+    }
+
+    .header-container {
+        z-index: 1;
+        color: lighten($color-dark, 100%);
+        text-align: $position;
+        padding: $size-main*6 $size-main*2;
+
+        h1 {
+            font-size: $size-main*6;
+            font-family: $font-main;
+            text-transform: uppercase;
+            margin: $size-main*2 $size-zero;
+            line-height: 1.5;
+        }
+    }
+}
+
+@import "buttons";

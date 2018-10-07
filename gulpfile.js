@@ -12,7 +12,9 @@ gulp.task('browser-sync', function () {
 
 gulp.task('compile', function () {
     gulp.src('app/scss/**/*.scss')
-        .pipe(scss())
+        .pipe(scss()).on('error', function (error) {
+            console.log(error.message);
+        })
         .pipe(gulp.dest('app/css'))
         .pipe(browserSync.reload({
             stream: true
