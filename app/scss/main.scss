@@ -1,3 +1,22 @@
-p {
-    color: darken(green, 20%)
+$size-zero: 0px;
+$size-main: 10px;
+$size-width: 100;
+
+$color-dark: #333;
+$color-grey: #808080;
+$color-blue: #308eee;
+$color-orange: orange; 
+$color-green: #56eb1a;
+
+$position: center;
+
+$font-main: Oswald;
+$font-second: sans-serif;
+
+body {
+    padding: $size-zero;
+    margin: $size-zero;
+    color: $color-dark;  
 }
+
+@import 'buttons';
