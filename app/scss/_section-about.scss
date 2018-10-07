@@ -1,0 +1,45 @@
+.section-about {
+    background-color: #f6f6f6;
+
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.about-left {
+    border-right: $size-main/5 solid $color-grey;
+    font-size: $size-main+8px;
+    font-family: $font-second;
+
+    padding: {
+        left: $size-main*6;
+        top: $size-main*6;
+        right: $size-main*6;
+        bottom: $size-main;
+    }
+
+    h2 {
+        font-family: $font-main;
+        font-size: $size-main*3;
+
+        margin: {
+            top: $size-zero;
+            bottom: $size-main*4;
+        }
+    }
+}
+
+.img-responsive {
+    display: block;
+    max-width: $size-width;
+    height: auto;
+}
+
+.about-right {
+    padding: {
+        left: $size-main*4;
+        top: $size-main*5;
+        right: $size-main*3;
+        bottom: $size-main;
+    }
+}
