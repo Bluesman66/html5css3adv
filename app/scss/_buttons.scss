@@ -4,12 +4,10 @@
     color: lighten($color-dark, 100%);
     text-decoration: none;
     padding: $size-main*1.5 $size-main*5;
-    font-size: $size-main*2;
-    letter-spacing: 1.5;
+    font-size: $size-main*2;    
     border-radius: $size-main/2;
     text-align: $position;
-    width: $size-main*13;
-    cursor: pointer;
+    width: $size-main*13;    
     font-family: $font-main;
     margin: $size-main;
     opacity: 0.95;
