@@ -5,7 +5,7 @@ $size-width: 100;
 $color-dark: #333;
 $color-grey: #808080;
 $color-blue: #308eee;
-$color-orange: orange; 
+$color-orange: orange;
 $color-green: #56eb1a;
 
 $position: center;
@@ -16,7 +16,7 @@ $font-second: sans-serif;
 body {
     padding: $size-zero;
     margin: $size-zero;
-    color: $color-dark;  
+    color: $color-dark;
 }
 
 .grid {
@@ -33,7 +33,7 @@ header.grid {
 
     &::before {
         content: "";
-        background-color: $color-grey;        
+        background-color: $color-grey;
         top: $size-zero;
         left: $size-zero;
         bottom: $size-zero;
@@ -63,3 +63,36 @@ header.grid {
 @import "section-form";
 @import "section-portfolio";
 @import "section-blog";
+
+.main-footer {
+    padding: $size-main*6 $size-zero $size-main*4 $size-zero;
+    background-color: darken($color-grey, 20%);
+    text-align: $position;
+    color: lighten($color-dark, 65);
+    font-family: $font-main;
+}
+
+.footer {
+    &-copy img {
+        width: $size-main*3;
+        height: $size-main*3;
+        margin: 1em;
+        transition: all 0.25s ease;
+
+        &:hover {
+            transform: scale(1.3);
+        }
+    }
+
+    &-logo span {
+        font-size: $size-main*2.8;
+        letter-spacing: $size-main/5;
+        line-height: 1.5;
+        display: block;
+
+        span {
+            font-size: $size-main*2;
+            letter-spacing: $size-main/10;
+        }
+    }
+}
